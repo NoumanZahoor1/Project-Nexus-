@@ -1,0 +1,580 @@
+{
+  "users": [
+    {
+      "id": "user-001",
+      "name": "System Administrator",
+      "email": "admin@projectnexus.com",
+      "password": "admin123",
+      "role": "admin",
+      "department": "Management",
+      "phone": "+1-555-0100",
+      "avatar": "SA",
+      "isActive": true,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "lastLogin": "2026-08-13T06:08:14.201Z"
+    },
+    {
+      "id": "user-002",
+      "name": "Sarah Mitchell",
+      "email": "sarah@projectnexus.com",
+      "password": "manager123",
+      "role": "manager",
+      "department": "Engineering",
+      "phone": "+1-555-0101",
+      "avatar": "SM",
+      "isActive": true,
+      "createdAt": "2026-01-15T00:00:00.000Z",
+      "lastLogin": "2026-08-10T06:08:21.111Z"
+    },
+    {
+      "id": "user-003",
+      "name": "James Rivera",
+      "email": "james@projectnexus.com",
+      "password": "manager123",
+      "role": "manager",
+      "department": "Product",
+      "phone": "+1-555-0102",
+      "avatar": "JR",
+      "isActive": true,
+      "createdAt": "2026-02-01T00:00:00.000Z",
+      "lastLogin": "2026-08-06T14:00:00.000Z"
+    },
+    {
+      "id": "user-004",
+      "name": "Emily Chen",
+      "email": "emily@projectnexus.com",
+      "password": "member123",
+      "role": "member",
+      "department": "Engineering",
+      "phone": "+1-555-0103",
+      "avatar": "EC",
+      "isActive": true,
+      "createdAt": "2026-02-10T00:00:00.000Z",
+      "lastLogin": "2026-08-10T06:08:42.283Z"
+    },
+    {
+      "id": "user-005",
+      "name": "Marcus Johnson",
+      "email": "marcus@projectnexus.com",
+      "password": "member123",
+      "role": "member",
+      "department": "Design",
+      "phone": "+1-555-0104",
+      "avatar": "MJ",
+      "isActive": true,
+      "createdAt": "2026-02-15T00:00:00.000Z",
+      "lastLogin": "2026-08-06T16:20:00.000Z"
+    },
+    {
+      "id": "user-006",
+      "name": "Priya Sharma",
+      "email": "priya@projectnexus.com",
+      "password": "member123",
+      "role": "member",
+      "department": "Engineering",
+      "phone": "+1-555-0105",
+      "avatar": "PS",
+      "isActive": true,
+      "createdAt": "2026-03-01T00:00:00.000Z",
+      "lastLogin": "2026-08-07T11:00:00.000Z"
+    },
+    {
+      "id": "user-007",
+      "name": "Daniel Park",
+      "email": "daniel@projectnexus.com",
+      "password": "member123",
+      "role": "member",
+      "department": "QA",
+      "phone": "+1-555-0106",
+      "avatar": "DP",
+      "isActive": true,
+      "createdAt": "2026-03-10T00:00:00.000Z",
+      "lastLogin": "2026-08-05T13:30:00.000Z"
+    },
+    {
+      "id": "user-008",
+      "name": "Nina Torres",
+      "email": "nina@projectnexus.com",
+      "password": "member123",
+      "role": "member",
+      "department": "Design",
+      "phone": "+1-555-0107",
+      "avatar": "NT",
+      "isActive": false,
+      "createdAt": "2026-04-01T00:00:00.000Z",
+      "lastLogin": "2026-07-20T10:00:00.000Z"
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj-001",
+      "name": "Nexus E-Commerce Platform",
+      "description": "Build a full-featured e-commerce platform with advanced product management, payment integration, and real-time inventory tracking.",
+      "startDate": "2026-02-01",
+      "endDate": "2026-09-30",
+      "priority": "critical",
+      "status": "active",
+      "managerId": "user-002",
+      "memberIds": [
+        "user-004",
+        "user-005",
+        "user-006",
+        "user-007"
+      ],
+      "tags": [
+        "e-commerce",
+        "react",
+        "node.js"
+      ],
+      "createdBy": "user-001",
+      "createdAt": "2026-01-25T00:00:00.000Z",
+      "updatedAt": "2026-08-01T00:00:00.000Z"
+    },
+    {
+      "id": "proj-002",
+      "name": "Mobile Analytics Dashboard",
+      "description": "Develop a cross-platform mobile analytics dashboard for tracking business KPIs and generating automated reports.",
+      "startDate": "2026-03-15",
+      "endDate": "2026-08-31",
+      "priority": "high",
+      "status": "active",
+      "managerId": "user-002",
+      "memberIds": [
+        "user-004",
+        "user-007"
+      ],
+      "tags": [
+        "mobile",
+        "analytics",
+        "react-native"
+      ],
+      "createdBy": "user-001",
+      "createdAt": "2026-03-10T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z"
+    },
+    {
+      "id": "proj-003",
+      "name": "AI-Powered CRM System",
+      "description": "Integrate AI capabilities into the existing CRM for predictive customer behavior analysis and automated follow-up workflows.",
+      "startDate": "2026-04-01",
+      "endDate": "2026-12-31",
+      "priority": "high",
+      "status": "active",
+      "managerId": "user-003",
+      "memberIds": [
+        "user-005",
+        "user-006"
+      ],
+      "tags": [
+        "AI",
+        "CRM",
+        "python"
+      ],
+      "createdBy": "user-001",
+      "createdAt": "2026-03-25T00:00:00.000Z",
+      "updatedAt": "2026-08-01T00:00:00.000Z"
+    },
+    {
+      "id": "proj-004",
+      "name": "Internal DevOps Infrastructure",
+      "description": "Revamp the internal DevOps pipeline, migrating to Kubernetes and implementing CI/CD best practices.",
+      "startDate": "2026-01-15",
+      "endDate": "2026-06-30",
+      "priority": "medium",
+      "status": "completed",
+      "managerId": "user-003",
+      "memberIds": [
+        "user-004",
+        "user-007"
+      ],
+      "tags": [
+        "devops",
+        "kubernetes",
+        "CI/CD"
+      ],
+      "createdBy": "user-001",
+      "createdAt": "2026-01-10T00:00:00.000Z",
+      "updatedAt": "2026-07-02T00:00:00.000Z"
+    },
+    {
+      "id": "proj-005",
+      "name": "Customer Portal Redesign",
+      "description": "Redesign the customer-facing portal with a modern UI, improved UX, accessibility compliance, and performance optimizations.",
+      "startDate": "2026-06-01",
+      "endDate": "2026-10-15",
+      "priority": "medium",
+      "status": "planning",
+      "managerId": "user-002",
+      "memberIds": [
+        "user-005",
+        "user-006"
+      ],
+      "tags": [
+        "UI/UX",
+        "accessibility",
+        "frontend"
+      ],
+      "createdBy": "user-001",
+      "createdAt": "2026-05-20T00:00:00.000Z",
+      "updatedAt": "2026-06-01T00:00:00.000Z"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task-001",
+      "projectId": "proj-001",
+      "title": "Design Database Schema",
+      "description": "Design and document the complete database schema for the e-commerce platform including product, order, user, and inventory tables.",
+      "assigneeId": "user-004",
+      "createdBy": "user-002",
+      "priority": "critical",
+      "status": "completed",
+      "dueDate": "2026-03-15",
+      "tags": [
+        "database",
+        "architecture"
+      ],
+      "createdAt": "2026-02-05T00:00:00.000Z",
+      "updatedAt": "2026-03-10T00:00:00.000Z"
+    },
+    {
+      "id": "task-002",
+      "projectId": "proj-001",
+      "title": "Implement Product Catalog API",
+      "description": "Build RESTful APIs for product listing, filtering, search, and detailed product pages with pagination support.",
+      "assigneeId": "user-004",
+      "createdBy": "user-002",
+      "priority": "high",
+      "status": "in-progress",
+      "dueDate": "2026-08-20",
+      "tags": [
+        "API",
+        "backend"
+      ],
+      "createdAt": "2026-03-01T00:00:00.000Z",
+      "updatedAt": "2026-08-01T00:00:00.000Z"
+    },
+    {
+      "id": "task-003",
+      "projectId": "proj-001",
+      "title": "UI Component Library Setup",
+      "description": "Set up a shared UI component library with design tokens, accessible components, and Storybook documentation.",
+      "assigneeId": "user-005",
+      "createdBy": "user-002",
+      "priority": "high",
+      "status": "completed",
+      "dueDate": "2026-04-01",
+      "tags": [
+        "UI",
+        "components",
+        "design"
+      ],
+      "createdAt": "2026-02-20T00:00:00.000Z",
+      "updatedAt": "2026-03-28T00:00:00.000Z"
+    },
+    {
+      "id": "task-004",
+      "projectId": "proj-001",
+      "title": "Payment Gateway Integration",
+      "description": "Integrate Stripe payment gateway with support for credit cards, wallets, and subscription billing.",
+      "assigneeId": "user-006",
+      "createdBy": "user-002",
+      "priority": "critical",
+      "status": "in-progress",
+      "dueDate": "2026-08-30",
+      "tags": [
+        "payments",
+        "Stripe",
+        "backend"
+      ],
+      "createdAt": "2026-04-01T00:00:00.000Z",
+      "updatedAt": "2026-08-05T00:00:00.000Z"
+    },
+    {
+      "id": "task-005",
+      "projectId": "proj-001",
+      "title": "End-to-End Testing Suite",
+      "description": "Write comprehensive E2E tests using Playwright covering critical user journeys: registration, checkout, order tracking.",
+      "assigneeId": "user-007",
+      "createdBy": "user-002",
+      "priority": "medium",
+      "status": "todo",
+      "dueDate": "2026-09-15",
+      "tags": [
+        "testing",
+        "QA",
+        "playwright"
+      ],
+      "createdAt": "2026-05-01T00:00:00.000Z",
+      "updatedAt": "2026-05-01T00:00:00.000Z"
+    },
+    {
+      "id": "task-006",
+      "projectId": "proj-001",
+      "title": "Product Image Optimization",
+      "description": "Implement lazy loading, WebP conversion, and CDN integration for all product images to improve performance.",
+      "assigneeId": "user-005",
+      "createdBy": "user-002",
+      "priority": "medium",
+      "status": "review",
+      "dueDate": "2026-08-10",
+      "tags": [
+        "performance",
+        "images",
+        "CDN"
+      ],
+      "createdAt": "2026-06-01T00:00:00.000Z",
+      "updatedAt": "2026-08-06T00:00:00.000Z"
+    },
+    {
+      "id": "task-007",
+      "projectId": "proj-002",
+      "title": "Analytics Data Pipeline",
+      "description": "Design and implement the data pipeline for ingesting, processing, and aggregating analytics events.",
+      "assigneeId": "user-004",
+      "createdBy": "user-002",
+      "priority": "high",
+      "status": "in-progress",
+      "dueDate": "2026-08-25",
+      "tags": [
+        "data",
+        "pipeline",
+        "analytics"
+      ],
+      "createdAt": "2026-03-20T00:00:00.000Z",
+      "updatedAt": "2026-08-01T00:00:00.000Z"
+    },
+    {
+      "id": "task-008",
+      "projectId": "proj-002",
+      "title": "Mobile Dashboard UI",
+      "description": "Design and implement responsive dashboard screens for iOS and Android with chart visualizations.",
+      "assigneeId": "user-007",
+      "createdBy": "user-002",
+      "priority": "high",
+      "status": "todo",
+      "dueDate": "2026-08-20",
+      "tags": [
+        "mobile",
+        "UI",
+        "charts"
+      ],
+      "createdAt": "2026-04-01T00:00:00.000Z",
+      "updatedAt": "2026-04-01T00:00:00.000Z"
+    },
+    {
+      "id": "task-009",
+      "projectId": "proj-003",
+      "title": "Customer Sentiment Analysis Model",
+      "description": "Train and deploy an NLP model for real-time customer sentiment analysis from support tickets and reviews.",
+      "assigneeId": "user-006",
+      "createdBy": "user-003",
+      "priority": "high",
+      "status": "in-progress",
+      "dueDate": "2026-09-01",
+      "tags": [
+        "AI",
+        "NLP",
+        "python"
+      ],
+      "createdAt": "2026-04-10T00:00:00.000Z",
+      "updatedAt": "2026-08-01T00:00:00.000Z"
+    },
+    {
+      "id": "task-010",
+      "projectId": "proj-003",
+      "title": "CRM Dashboard Integration",
+      "description": "Integrate AI insights into the CRM dashboard with actionable recommendations and automated alerts.",
+      "assigneeId": "user-005",
+      "createdBy": "user-003",
+      "priority": "medium",
+      "status": "todo",
+      "dueDate": "2026-10-01",
+      "tags": [
+        "CRM",
+        "dashboard",
+        "integration"
+      ],
+      "createdAt": "2026-05-01T00:00:00.000Z",
+      "updatedAt": "2026-05-01T00:00:00.000Z"
+    }
+  ],
+  "taskComments": [
+    {
+      "id": "comment-001",
+      "taskId": "task-002",
+      "authorId": "user-004",
+      "content": "Started working on the product listing endpoint. The filtering logic is mostly done, just need to add the search functionality.",
+      "createdAt": "2026-08-03T09:00:00.000Z",
+      "updatedAt": "2026-08-03T09:00:00.000Z"
+    },
+    {
+      "id": "comment-002",
+      "taskId": "task-002",
+      "authorId": "user-002",
+      "content": "Great progress! Make sure the search is case-insensitive and handles partial matches. Also add proper indexing for performance.",
+      "createdAt": "2026-08-03T10:30:00.000Z",
+      "updatedAt": "2026-08-03T10:30:00.000Z"
+    },
+    {
+      "id": "comment-003",
+      "taskId": "task-002",
+      "authorId": "user-004",
+      "content": "Will do. I'll also add rate limiting to the search endpoint. Should be ready for review by end of this week.",
+      "createdAt": "2026-08-03T11:00:00.000Z",
+      "updatedAt": "2026-08-03T11:00:00.000Z"
+    },
+    {
+      "id": "comment-004",
+      "taskId": "task-004",
+      "authorId": "user-006",
+      "content": "Stripe webhook handling is now implemented. Working on the subscription billing flow next.",
+      "createdAt": "2026-08-05T14:00:00.000Z",
+      "updatedAt": "2026-08-05T14:00:00.000Z"
+    },
+    {
+      "id": "comment-005",
+      "taskId": "task-004",
+      "authorId": "user-002",
+      "content": "Please make sure to handle failed payment scenarios gracefully and send appropriate notifications to customers.",
+      "createdAt": "2026-08-05T15:00:00.000Z",
+      "updatedAt": "2026-08-05T15:00:00.000Z"
+    },
+    {
+      "id": "comment-006",
+      "taskId": "task-009",
+      "authorId": "user-006",
+      "content": "The sentiment model is showing 87% accuracy on the test dataset. Preparing for deployment.",
+      "createdAt": "2026-08-06T11:00:00.000Z",
+      "updatedAt": "2026-08-06T11:00:00.000Z"
+    },
+    {
+      "id": "comment-007",
+      "taskId": "task-009",
+      "authorId": "user-003",
+      "content": "Excellent work! Can you also add confidence scores to the predictions so we can filter out low-confidence results?",
+      "createdAt": "2026-08-06T12:00:00.000Z",
+      "updatedAt": "2026-08-06T12:00:00.000Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "notif-001",
+      "userId": "user-004",
+      "type": "task_assigned",
+      "title": "New Task Assigned",
+      "message": "You have been assigned the task 'Implement Product Catalog API' in Nexus E-Commerce Platform.",
+      "entityId": "task-002",
+      "entityType": "task",
+      "isRead": false,
+      "createdAt": "2026-08-01T09:00:00.000Z"
+    },
+    {
+      "id": "notif-002",
+      "userId": "user-006",
+      "type": "task_assigned",
+      "title": "New Task Assigned",
+      "message": "You have been assigned the task 'Payment Gateway Integration' in Nexus E-Commerce Platform.",
+      "entityId": "task-004",
+      "entityType": "task",
+      "isRead": true,
+      "createdAt": "2026-08-01T09:05:00.000Z"
+    },
+    {
+      "id": "notif-003",
+      "userId": "user-004",
+      "type": "comment_added",
+      "title": "New Comment on Your Task",
+      "message": "Sarah Mitchell commented on 'Implement Product Catalog API': Make sure the search is case-insensitive...",
+      "entityId": "task-002",
+      "entityType": "task",
+      "isRead": false,
+      "createdAt": "2026-08-03T10:30:00.000Z"
+    },
+    {
+      "id": "notif-004",
+      "userId": "user-007",
+      "type": "deadline_approaching",
+      "title": "Deadline Approaching",
+      "message": "Task 'Mobile Dashboard UI' is due in 13 days. Please update your progress.",
+      "entityId": "task-008",
+      "entityType": "task",
+      "isRead": false,
+      "createdAt": "2026-08-07T08:00:00.000Z"
+    },
+    {
+      "id": "notif-005",
+      "userId": "user-002",
+      "type": "status_updated",
+      "title": "Task Status Updated",
+      "message": "Emily Chen updated 'Implement Product Catalog API' to In Progress.",
+      "entityId": "task-002",
+      "entityType": "task",
+      "isRead": true,
+      "createdAt": "2026-08-01T14:00:00.000Z"
+    },
+    {
+      "id": "notif-006",
+      "userId": "user-006",
+      "type": "comment_added",
+      "title": "New Comment on Your Task",
+      "message": "James Rivera commented on 'Customer Sentiment Analysis Model': Excellent work!...",
+      "entityId": "task-009",
+      "entityType": "task",
+      "isRead": false,
+      "createdAt": "2026-08-06T12:00:00.000Z"
+    }
+  ],
+  "activityLogs": [
+    {
+      "id": "log-001",
+      "projectId": "proj-001",
+      "userId": "user-004",
+      "action": "task_completed",
+      "description": "Completed task: Design Database Schema",
+      "entityId": "task-001",
+      "entityType": "task",
+      "createdAt": "2026-03-10T00:00:00.000Z"
+    },
+    {
+      "id": "log-002",
+      "projectId": "proj-001",
+      "userId": "user-005",
+      "action": "task_completed",
+      "description": "Completed task: UI Component Library Setup",
+      "entityId": "task-003",
+      "entityType": "task",
+      "createdAt": "2026-03-28T00:00:00.000Z"
+    },
+    {
+      "id": "log-003",
+      "projectId": "proj-001",
+      "userId": "user-004",
+      "action": "status_updated",
+      "description": "Updated task 'Implement Product Catalog API' to In Progress",
+      "entityId": "task-002",
+      "entityType": "task",
+      "createdAt": "2026-08-01T14:00:00.000Z"
+    },
+    {
+      "id": "log-004",
+      "projectId": "proj-001",
+      "userId": "user-005",
+      "action": "status_updated",
+      "description": "Updated task 'Product Image Optimization' to Review",
+      "entityId": "task-006",
+      "entityType": "task",
+      "createdAt": "2026-08-06T00:00:00.000Z"
+    },
+    {
+      "id": "log-005",
+      "projectId": "proj-003",
+      "userId": "user-006",
+      "action": "comment_added",
+      "description": "Added a comment on task: Customer Sentiment Analysis Model",
+      "entityId": "task-009",
+      "entityType": "task",
+      "createdAt": "2026-08-06T11:00:00.000Z"
+    }
+  ]
+}
