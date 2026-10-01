@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import Sidebar from './Sidebar'
 import Navbar from './Navbar'
+import Breadcrumbs from '../common/Breadcrumbs'
+import PageTransition from '../common/PageTransition'
 
 export default function AppLayout({ children }) {
   const [sidebarOpen, setSidebarOpen] = useState(false)
@@ -11,7 +13,10 @@ export default function AppLayout({ children }) {
       <main className="app-main">
         <Navbar onMenuClick={() => setSidebarOpen(v => !v)} />
         <div className="app-content">
-          {children}
+          <Breadcrumbs />
+          <PageTransition>
+            {children}
+          </PageTransition>
         </div>
       </main>
     </div>
